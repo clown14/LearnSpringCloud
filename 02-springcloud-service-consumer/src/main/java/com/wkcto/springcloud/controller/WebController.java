@@ -23,7 +23,8 @@ public class WebController {
 
         //调用SpringCloud服务提供者提供的服务
 
-        return restTemplate.getForEntity("http://localhost:8080/service/hello", String.class).getBody();
+        //return restTemplate.getForEntity("http://localhost:8080/service/hello", String.class).getBody();
+        return restTemplate.getForEntity("http://01-SPRINGCLOUD-SERVICE-PROVIDER/service/hello", String.class).getBody();
     }
 }
 
