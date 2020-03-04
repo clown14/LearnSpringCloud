@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/01-springcloud-service-provider/01-springcloud-service-provider.iml" filepath="$PROJECT_DIR$/01-springcloud-service-provider/01-springcloud-service-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/01-springcloud-service-provider-02/01-springcloud-service-provider-02.iml" filepath="$PROJECT_DIR$/01-springcloud-service-provider-02/01-springcloud-service-provider-02.iml" />
       <module fileurl="file://$PROJECT_DIR$/02-springcloud-service-consumer/02-springcloud-service-consumer.iml" filepath="$PROJECT_DIR$/02-springcloud-service-consumer/02-springcloud-service-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/03-springcloud-eureka-server/03-springcloud-eureka-server.iml" filepath="$PROJECT_DIR$/03-springcloud-eureka-server/03-springcloud-eureka-server.iml" />
     </modules>

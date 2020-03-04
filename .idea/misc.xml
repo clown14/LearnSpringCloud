@@ -6,8 +6,10 @@
         <option value="$PROJECT_DIR$/01-springcloud-service-provider/pom.xml" />
         <option value="$PROJECT_DIR$/02-springcloud-service-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/03-springcloud-eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/01-springcloud-service-provider-02/pom.xml" />
       </list>
     </option>
   </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
   <component name="WebServicesPlugin" addRequiredLibraries="true" />
 </project>

@@ -15,8 +15,8 @@ public class HelloController {
     @RequestMapping("/service/hello")
     public String hello() {
         //业务处理
-        System.out.println("服务提供者1.。。。。。。。。。。");
-        return "Hello, SpirngCloud，provider1";
+        System.out.println("服务提供者2.。。。。。。。。。。");
+        return "Hello, SpirngCloud，provider2";
     }
 }
 
