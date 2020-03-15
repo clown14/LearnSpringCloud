@@ -1,6 +1,8 @@
 package com.wkcto.springcloud.controller;
 
+import com.wkcto.springcloud.model.User;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -17,6 +19,32 @@ public class HelloController {
         //业务处理
         System.out.println("服务提供者2.。。。。。。。。。。");
         return "Hello, SpirngCloud，provider2";
+    }
+
+    @RequestMapping("/service/user")
+    public User user() {
+        //业务处理
+        System.out.println("服务提供者2.。。。。。。。。。。");
+        User user = new User();
+        user.setId(108);
+        user.setName("张三");
+        user.setPhone("138888888");
+
+        return user;
+    }
+
+    @RequestMapping("/service/getUser")
+    public User getUser(@RequestParam("id") Integer id,
+                        @RequestParam("name") String name,
+                        @RequestParam("phone") String phone) {
+        //业务处理
+        System.out.println("服务提供者2.。。。。。。。。。。");
+        User user = new User();
+        user.setId(id);
+        user.setName(name);
+        user.setPhone(phone);
+
+        return user;
     }
 }
 
