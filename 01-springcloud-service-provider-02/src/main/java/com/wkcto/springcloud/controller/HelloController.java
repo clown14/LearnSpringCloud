@@ -1,9 +1,7 @@
 package com.wkcto.springcloud.controller;
 
 import com.wkcto.springcloud.model.User;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @program: wkctoProjects
@@ -44,6 +42,54 @@ public class HelloController {
         user.setName(name);
         user.setPhone(phone);
 
+        return user;
+    }
+
+    //@RequestMapping(value = "/service/addUser",method = RequestMethod.POST)
+    @PostMapping("/service/addUser")
+    public User addUser(@RequestParam("id") Integer id,
+                        @RequestParam("name") String name,
+                        @RequestParam("phone") String phone) {
+        //业务处理
+        System.out.println("服务提供者2.。。。。。。。。。。");
+        User user = new User();
+        user.setId(id);
+        user.setName(name);
+        user.setPhone(phone);
+
+        //将user对象插入数据库（省略）
+        return user;
+    }
+
+    //@RequestMapping(value = "/service/updateUser",method = RequestMethod.PUT)
+    @PutMapping("/service/updateUser")
+    public User updateUser(@RequestParam("id") Integer id,
+                           @RequestParam("name") String name,
+                           @RequestParam("phone") String phone) {
+        //业务处理
+        System.out.println("服务提供者2.。。。。。。。。。。" + id + "--" + name + "--" + phone);
+        User user = new User();
+        user.setId(id);
+        user.setName(name);
+        user.setPhone(phone);
+
+        //将user对象插入数据库（省略）
+        return user;
+    }
+
+    //@RequestMapping(value = "/service/deleteUser",method = RequestMethod.DELETE)
+    @DeleteMapping("/service/deleteUser")
+    public User deleteUser(@RequestParam("id") Integer id,
+                           @RequestParam("name") String name,
+                           @RequestParam("phone") String phone) {
+        //业务处理
+        System.out.println("服务提供者2.。。。。。。。。。。" + id + "--" + name + "--" + phone);
+        User user = new User();
+        user.setId(id);
+        user.setName(name);
+        user.setPhone(phone);
+
+        //将user对象插入数据库（省略）
         return user;
     }
 }
