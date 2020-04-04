@@ -1,5 +1,8 @@
 package com.wkcto.springcloud.controller;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
+import com.netflix.ribbon.proxy.annotation.Hystrix;
 import com.wkcto.springcloud.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
@@ -208,6 +211,23 @@ public class WebController {
         return "success";
     }
 
+    /**
+     * hystrix超时时间3.5s
+     * @return
+     */
+    @RequestMapping("/web/hystrix")
+    @HystrixCommand(fallbackMethod = "error", commandProperties = {@HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "3500")
+    })
+    public String hystrix() {
+
+        return restTemplate.getForEntity("http://01-SPRINGCLOUD-SERVICE-PROVIDER/service/hello", String.class).getBody();
+    }
+
+    public String error() {
+        //访问远程服务失败，该如何处理？
+        //处理逻辑
+        return "error";
+    }
 }
 
     

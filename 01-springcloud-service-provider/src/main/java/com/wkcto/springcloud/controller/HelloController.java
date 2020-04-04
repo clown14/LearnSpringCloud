@@ -15,6 +15,12 @@ public class HelloController {
 //    @RequestMapping("/service/hello")
     @GetMapping("/service/hello")
     public String hello() {
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         //业务处理
         System.out.println("服务提供者1.。。。。。。。。。。");
         return "Hello, SpirngCloud，provider1";

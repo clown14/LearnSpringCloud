@@ -37,10 +37,10 @@ public class BeanConfig {
      *
      * @return
      */
-    @Bean
+    //@Bean
     public IRule iRule() {
         //return new RandomRule();    //采用随机的负载均衡策略
-        return new RetryRule();     //采用重拾的负载均衡策略
+        return new RetryRule();     //采用重试的负载均衡策略
     }
 
 
