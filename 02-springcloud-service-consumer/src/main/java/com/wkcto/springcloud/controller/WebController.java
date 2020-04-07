@@ -1,8 +1,10 @@
 package com.wkcto.springcloud.controller;
 
+import com.netflix.hystrix.HystrixCommandGroupKey;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import com.netflix.ribbon.proxy.annotation.Hystrix;
+import com.wkcto.springcloud.hystrix.MyHystrixCommand;
 import com.wkcto.springcloud.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
@@ -16,6 +18,8 @@ import org.springframework.web.client.RestTemplate;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.Future;
 
 /**
  * @program: wkctoProjects
@@ -213,20 +217,46 @@ public class WebController {
 
     /**
      * hystrix超时时间3.5s
+     *
      * @return
      */
     @RequestMapping("/web/hystrix")
-    @HystrixCommand(fallbackMethod = "error", commandProperties = {@HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "3500")
-    })
+    @HystrixCommand(fallbackMethod = "error", ignoreExceptions = RuntimeException.class, commandProperties = {@HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "3500")})
     public String hystrix() {
+
+        //int a = 10 / 0; //除数不能为0
 
         return restTemplate.getForEntity("http://01-SPRINGCLOUD-SERVICE-PROVIDER/service/hello", String.class).getBody();
     }
 
-    public String error() {
+    public String error(Throwable throwable) {
+
+        System.out.println("异常:" + throwable.getMessage());
         //访问远程服务失败，该如何处理？
         //处理逻辑
         return "error";
+    }
+
+    @RequestMapping("/web/hystrix2")
+    public String hystrix2() throws ExecutionException,InterruptedException{
+
+        //int a = 10 / 0; //除数不能为0
+        MyHystrixCommand myHystrixCommand = new MyHystrixCommand(com.netflix.hystrix.HystrixCommand.Setter.withGroupKey(HystrixCommandGroupKey.Factory.asKey("")), restTemplate);
+
+        //同步调用（该方法执行后，会等待远程的返回结果，拿到了远程的返回结果，该方法才返回，然后代码继续往下执行）
+        //String str = myHystrixCommand.execute();
+
+        //异步调用（该方法执行后，不会马上有远程的返回结果，将来会有结果
+        Future<String> future = myHystrixCommand.queue();
+
+        //写一些业务逻辑
+
+        //阻塞的方法，直到拿到结果
+        String str = future.get();
+
+        //写一些业务逻辑
+
+        return str;
     }
 }
 

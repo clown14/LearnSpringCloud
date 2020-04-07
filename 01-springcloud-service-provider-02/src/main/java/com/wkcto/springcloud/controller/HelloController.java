@@ -14,6 +14,9 @@ public class HelloController {
 
     @RequestMapping("/service/hello")
     public String hello() {
+
+        int a = 10 / 0; //除数不能为0，会抛出一个运行时异常
+
         //业务处理
         System.out.println("服务提供者2.。。。。。。。。。。");
         return "Hello, SpirngCloud，provider2";
