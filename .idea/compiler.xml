@@ -11,6 +11,7 @@
         <module name="01-springcloud-service-provider-02" />
         <module name="02-springcloud-service-consumer" />
         <module name="03-springcloud-eureka-server" />
+        <module name="04-springcloud-hystrix-dashboard" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,6 +20,7 @@
       <module name="01-springcloud-service-provider-02" target="1.8" />
       <module name="02-springcloud-service-consumer" target="1.8" />
       <module name="03-springcloud-eureka-server" target="1.8" />
+      <module name="04-springcloud-hystrix-dashboard" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
