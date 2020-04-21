@@ -6,12 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="01-springcloud-service-provider" />
-        <module name="01-springcloud-service-provider (1)" />
         <module name="01-springcloud-service-provider-02" />
-        <module name="02-springcloud-service-consumer" />
-        <module name="03-springcloud-eureka-server" />
+        <module name="01-springcloud-service-provider (1)" />
+        <module name="05-springcloud-service-feign" />
         <module name="04-springcloud-hystrix-dashboard" />
+        <module name="03-springcloud-eureka-server" />
+        <module name="01-springcloud-service-provider" />
+        <module name="02-springcloud-service-consumer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -21,6 +22,18 @@
       <module name="02-springcloud-service-consumer" target="1.8" />
       <module name="03-springcloud-eureka-server" target="1.8" />
       <module name="04-springcloud-hystrix-dashboard" target="1.8" />
+      <module name="05-springcloud-service-feign" target="1.8" />
+      <module name="05-springcloud-service-feign (1) (com.wkcto.springcloud)" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="01-springcloud-service-provider" options="-parameters" />
+      <module name="01-springcloud-service-provider-02" options="-parameters" />
+      <module name="02-springcloud-service-consumer" options="-parameters" />
+      <module name="03-springcloud-eureka-server" options="-parameters" />
+      <module name="04-springcloud-hystrix-dashboard" options="-parameters" />
+      <module name="05-springcloud-service-feign" options="-parameters" />
+    </option>
   </component>
 </project>

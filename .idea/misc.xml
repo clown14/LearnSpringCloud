@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <type id="Spring" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
@@ -8,6 +11,7 @@
         <option value="$PROJECT_DIR$/03-springcloud-eureka-server/pom.xml" />
         <option value="$PROJECT_DIR$/01-springcloud-service-provider-02/pom.xml" />
         <option value="$PROJECT_DIR$/04-springcloud-hystrix-dashboard/pom.xml" />
+        <option value="$PROJECT_DIR$/05-springcloud-service-feign/pom.xml" />
       </list>
     </option>
   </component>
