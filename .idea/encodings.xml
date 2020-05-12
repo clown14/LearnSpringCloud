@@ -13,5 +13,7 @@
     <file url="file://$PROJECT_DIR$/04-springcloud-hystrix-dashboard/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/05-springcloud-service-feign" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/05-springcloud-service-feign/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/06-springcloud-api-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/06-springcloud-api-gateway/src/main/java" charset="UTF-8" />
   </component>
 </project>
