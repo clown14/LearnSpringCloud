@@ -15,5 +15,8 @@
     <file url="file://$PROJECT_DIR$/05-springcloud-service-feign/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/06-springcloud-api-gateway" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/06-springcloud-api-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/07-springcloud-config-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/07-springcloud-config-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08-springcloud-config-client/src/main/java" charset="UTF-8" />
   </component>
 </project>

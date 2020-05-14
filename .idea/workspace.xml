@@ -4,36 +4,14 @@
     <list default="true" id="45c85c61-2027-4440-bd3c-3e1950222e94" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-springcloud-service-provider-02/src/main/java/com/wkcto/springcloud/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/01-springcloud-service-provider-02/src/main/java/com/wkcto/springcloud/controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-springcloud-service-provider/src/main/java/com/wkcto/springcloud/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/01-springcloud-service-provider/src/main/java/com/wkcto/springcloud/controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-springcloud-service-provider/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/01-springcloud-service-provider/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04-springcloud-hystrix-dashboard/target/classes/com/wkcto/springcloud/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/04-springcloud-hystrix-dashboard/target/classes/com/wkcto/springcloud/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05-springcloud-service-feign/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/05-springcloud-service-feign/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05-springcloud-service-feign/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/05-springcloud-service-feign/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05-springcloud-service-feign/target/classes/com/wkcto/springcloud/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/05-springcloud-service-feign/target/classes/com/wkcto/springcloud/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05-springcloud-service-feign/target/classes/com/wkcto/springcloud/fallback/MyFallbackFactory$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/05-springcloud-service-feign/target/classes/com/wkcto/springcloud/fallback/MyFallbackFactory$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05-springcloud-service-feign/target/classes/com/wkcto/springcloud/fallback/MyFallbackFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/05-springcloud-service-feign/target/classes/com/wkcto/springcloud/fallback/MyFallbackFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_TABLE_DETAILS" value="true" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <expand />
-    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -118,7 +96,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application (5 8080)">
+  <component name="RunManager" selected="Spring Boot.Application (1)">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -167,6 +145,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="08-springcloud-config-client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wkcto.springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wkcto.springcloud.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application (2 9200)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
       <module name="01-springcloud-service-provider-02" />
       <extension name="coverage">
@@ -195,34 +186,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Application (3 8081)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
-      <module name="02-springcloud-service-consumer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wkcto.springcloud.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wkcto.springcloud.Application" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Application (4 8082)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
-      <module name="05-springcloud-service-feign" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wkcto.springcloud.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wkcto.springcloud.Application" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Application (5 8080)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
       <module name="06-springcloud-api-gateway" />
       <extension name="coverage">
@@ -233,6 +196,19 @@
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.wkcto.springcloud.Application" />
       <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="07-springcloud-config-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wkcto.springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wkcto.springcloud.Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -350,20 +326,20 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.Application8762" />
-      <item itemvalue="Spring Boot.Application8761" />
       <item itemvalue="Spring Boot.Application (1 9100)" />
-      <item itemvalue="Spring Boot.Application (4 8082)" />
+      <item itemvalue="Spring Boot.Application8761" />
+      <item itemvalue="Spring Boot.Application (3 3721)" />
       <item itemvalue="Spring Boot.Application (5 8080)" />
       <item itemvalue="Spring Boot.Application (2 9200)" />
-      <item itemvalue="Spring Boot.Application (3 3721)" />
-      <item itemvalue="Spring Boot.Application (3 8081)" />
+      <item itemvalue="Spring Boot.Application" />
+      <item itemvalue="Spring Boot.Application (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.Application (5 8080)" />
-        <item itemvalue="Spring Boot.Application (4 8082)" />
-        <item itemvalue="Spring Boot.Application (3 8081)" />
+        <item itemvalue="Spring Boot.Application (1)" />
+        <item itemvalue="Spring Boot.Application" />
         <item itemvalue="Spring Boot.Application (2 9200)" />
+        <item itemvalue="Spring Boot.Application (5 8080)" />
         <item itemvalue="Spring Boot.Application (3 3721)" />
       </list>
     </recent_temporary>
@@ -454,7 +430,11 @@
       <workItem from="1589265469926" duration="80000" />
       <workItem from="1589265572329" duration="3000" />
       <workItem from="1589265587970" duration="234000" />
-      <workItem from="1589265838918" duration="5263000" />
+      <workItem from="1589265838918" duration="5329000" />
+      <workItem from="1589353087968" duration="1592000" />
+      <workItem from="1589355219835" duration="41000" />
+      <workItem from="1589355281014" duration="41000" />
+      <workItem from="1589355335856" duration="5857000" />
     </task>
     <servers />
   </component>
@@ -470,6 +450,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="483" y="0" width="967" height="1050" key="#Application8081/0.0.1920.1050@0.0.1920.1050" timestamp="1589265945888" />
+    <state x="483" y="0" width="967" height="1050" key="#Application_(3_3721)" timestamp="1589356899734">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="483" y="0" width="967" height="1050" key="#Application_(3_3721)/0.0.1920.1050@0.0.1920.1050" timestamp="1589356899734" />
     <state x="483" y="0" width="967" height="1050" key="#Application_(3_8081）" timestamp="1589268958421">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -510,38 +494,38 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="725" y="264" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1587400205860" />
-    <state width="1408" height="281" key="GridCell.Tab.0.bottom" timestamp="1589271246026">
+    <state width="1408" height="292" key="GridCell.Tab.0.bottom" timestamp="1589376602357">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1408" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1589271246026" />
-    <state width="1408" height="281" key="GridCell.Tab.0.center" timestamp="1589271246026">
+    <state width="1408" height="292" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1589376602357" />
+    <state width="1408" height="292" key="GridCell.Tab.0.center" timestamp="1589376602357">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1408" height="281" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1589271246026" />
-    <state width="1408" height="281" key="GridCell.Tab.0.left" timestamp="1589271246026">
+    <state width="1408" height="292" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1589376602357" />
+    <state width="1408" height="292" key="GridCell.Tab.0.left" timestamp="1589376602357">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1408" height="281" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1589271246026" />
-    <state width="1408" height="281" key="GridCell.Tab.0.right" timestamp="1589271246026">
+    <state width="1408" height="292" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1589376602357" />
+    <state width="1408" height="292" key="GridCell.Tab.0.right" timestamp="1589376602357">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1408" height="281" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1589271246026" />
-    <state width="1408" height="281" key="GridCell.Tab.1.bottom" timestamp="1589271246026">
+    <state width="1408" height="292" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1589376602357" />
+    <state width="1408" height="292" key="GridCell.Tab.1.bottom" timestamp="1589376602357">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1408" height="281" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1589271246026" />
-    <state width="1408" height="281" key="GridCell.Tab.1.center" timestamp="1589271246026">
+    <state width="1408" height="292" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1589376602357" />
+    <state width="1408" height="292" key="GridCell.Tab.1.center" timestamp="1589376602357">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1408" height="281" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1589271246026" />
-    <state width="1408" height="281" key="GridCell.Tab.1.left" timestamp="1589271246026">
+    <state width="1408" height="292" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1589376602357" />
+    <state width="1408" height="292" key="GridCell.Tab.1.left" timestamp="1589376602357">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1408" height="281" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1589271246026" />
-    <state width="1408" height="281" key="GridCell.Tab.1.right" timestamp="1589271246026">
+    <state width="1408" height="292" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1589376602357" />
+    <state width="1408" height="292" key="GridCell.Tab.1.right" timestamp="1589376602357">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1408" height="281" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1589271246026" />
+    <state width="1408" height="292" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1589376602357" />
     <state x="549" y="76" key="SettingsEditor" timestamp="1587397801943">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -554,10 +538,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="826" y="391" width="250" height="278" key="jetbrains.javascript.buildTools.run-task-popup/0.0.1920.1050@0.0.1920.1050" timestamp="1587455163608" />
-    <state x="490" y="185" width="911" height="648" key="new project wizard" timestamp="1587821294637">
+    <state x="490" y="185" width="911" height="648" key="new project wizard" timestamp="1589374004726">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="490" y="185" width="911" height="648" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1587821294637" />
+    <state x="490" y="185" width="911" height="648" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1589374004726" />
     <state x="616" y="243" key="run.anything.popup" timestamp="1588089945734">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

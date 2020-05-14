@@ -9,6 +9,8 @@
       <module fileurl="file://$PROJECT_DIR$/04-springcloud-hystrix-dashboard/04-springcloud-hystrix-dashboard.iml" filepath="$PROJECT_DIR$/04-springcloud-hystrix-dashboard/04-springcloud-hystrix-dashboard.iml" />
       <module fileurl="file://$PROJECT_DIR$/05-springcloud-service-feign/05-springcloud-service-feign.iml" filepath="$PROJECT_DIR$/05-springcloud-service-feign/05-springcloud-service-feign.iml" />
       <module fileurl="file://$PROJECT_DIR$/06-springcloud-api-gateway/06-springcloud-api-gateway.iml" filepath="$PROJECT_DIR$/06-springcloud-api-gateway/06-springcloud-api-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07-springcloud-config-server/07-springcloud-config-server.iml" filepath="$PROJECT_DIR$/07-springcloud-config-server/07-springcloud-config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/08-springcloud-config-client/08-springcloud-config-client.iml" filepath="$PROJECT_DIR$/08-springcloud-config-client/08-springcloud-config-client.iml" />
     </modules>
   </component>
 </project>
